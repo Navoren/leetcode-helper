@@ -22,8 +22,8 @@ An MCP server that gives structured, AI-powered DSA guidance inside Claude Deskt
 **Prerequisites:** Node.js 18+, an `ANTHROPIC_API_KEY`
 
 ```bash
-git clone <repo>
-cd leetcode-mcp
+git clone https://github.com/Navoren/leetcode-helper.git
+cd leetcode-helper
 npm install
 npm run build
 ```
@@ -39,7 +39,7 @@ Add to `.claude/settings.json` (project or global):
   "mcpServers": {
     "leetcode-helper": {
       "command": "node",
-      "args": ["d:/leetcode-mcp/dist/index.js"],
+      "args": ["d:/leetcode-helper/dist/index.js"],
       "env": {
         "ANTHROPIC_API_KEY": "your-key-here"
       }
@@ -57,7 +57,7 @@ Add to `claude_desktop_config.json`:
   "mcpServers": {
     "leetcode-helper": {
       "command": "node",
-      "args": ["/absolute/path/to/leetcode-mcp/dist/index.js"],
+      "args": ["/absolute/path/to/leetcode-helper/dist/index.js"],
       "env": {
         "ANTHROPIC_API_KEY": "your-key-here"
       }
